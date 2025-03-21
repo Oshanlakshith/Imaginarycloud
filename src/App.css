@@ -28,10 +28,20 @@
   color: #61dafb;
 }
 
+/* /////////CUSTOM TAILWIND CSS//////////// */
+.custom_container_one {
+  @apply w-[90%] mx-auto;
+}
+
+.cus_padding {
+  @apply pt-[70px] pb-[70px];
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
