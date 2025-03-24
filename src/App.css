@@ -1,3 +1,7 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -34,7 +38,19 @@
 }
 
 .cus_padding {
+  @apply pt-[100px] pb-[100px];
+}
+
+.cus_padding_70 {
   @apply pt-[70px] pb-[70px];
+}
+
+.custom_container_three {
+  @apply w-[70%] mx-auto;
+}
+
+.s_n_c {
+  @apply text-muted_blue
 }
 
 @keyframes App-logo-spin {

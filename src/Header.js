@@ -37,7 +37,7 @@ function Header() {
                   key={item.name}
                   to={item.href}
                   className={classNames(
-                    item.current ? 'text-black text-white' : ' hover:text-black',
+                    item.current ? 'text-black' : ' hover:text-black',
               'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                 >
