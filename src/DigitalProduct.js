@@ -1,11 +1,14 @@
-import React from 'react';
-function DigitalProduct() {
+import React from "react";
+
+function DigitalProduct({ data }) {
     return (
-        <div className='custom_container_one'>
-            <div className='cus_padding_70'>
-                <h2 className='text-3xl font-medium text-black text-start md:text-5xl font-bold pb-[30px] leading-[1.4] md:leading-[1.2]'>We think your digital product ‍<br></br><span className='text-cyan-500 font-bold'>like a user</span></h2>
+       
+            <div className="shadow react_cards p-[30px] flex flex-col items-center">
+                {data.image && <div className="logo_image"><img src={data.image} width="100" height="50" alt="Logo" /></div>}
+                {data.count && <div className="count">{data.count}</div>}
+                {data.text && <div className="text">{data.text}</div>}
             </div>
-        </div>
     );
 }
+
 export default DigitalProduct;
